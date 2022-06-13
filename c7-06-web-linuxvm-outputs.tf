@@ -1,11 +1,11 @@
 /*# Public IP Outputs
-/*
+
 ## Public IP Address
 output "web_linuxvm_public_ip" {
   description = "Web Linux VM Public Address"
   value = azurerm_public_ip.web_linuxvm_publicip.ip_address
 }
-*/
+
 
 # Network Interface Outputs
 ## Network Interface ID
@@ -26,7 +26,7 @@ output "web_linuxvm_public_ip_address" {
   description = "Web Linux Virtual Machine Public IP"
   value = azurerm_linux_virtual_machine.web_linuxvm.public_ip_address
 }
-*/
+
 
 ## Virtual Machine Private IP
 output "web_linuxvm_private_ip_address" {
@@ -43,7 +43,5 @@ output "web_linuxvm_virtual_machine_id" {
   description = "Web Linux Virtual Machine ID "
   value = azurerm_linux_virtual_machine.web_linuxvm.id
 }
-
-
 
 */
