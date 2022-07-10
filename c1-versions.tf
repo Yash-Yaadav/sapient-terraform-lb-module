@@ -21,10 +21,6 @@ data "azurerm_key_vault" "terrakv" {
   resource_group_name = "cicd" // resourceGroup
 }
 
-data "azurerm_key_vault_secret" "terraformjenkins" {
-name = "terraformjenkins" // Name of secret
-key_vault_id = data.azurerm_key_vault.terrakv.id
-}
 # Provider Block
 provider "azurerm" {
  features {}   
