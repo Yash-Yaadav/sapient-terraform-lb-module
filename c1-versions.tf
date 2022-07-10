@@ -17,7 +17,7 @@ terraform {
   }
 }
 data "azurerm_key_vault" "terrakv" {
-  name                = "terrakv" // KeyVault name
+  name                = "jenkinsvaultgd" // KeyVault name
   resource_group_name = "cicd" // resourceGroup
 }
 
